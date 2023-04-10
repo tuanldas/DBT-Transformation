@@ -25,4 +25,4 @@ models:
       staging:
         materialized: table
       material:
-        +materialized: table
+        materialized: table
