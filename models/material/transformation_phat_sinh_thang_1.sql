@@ -12,7 +12,7 @@ with months as
                        (10),
                        (11),
                        (12)) AS x(month)),
-     tk_and_year_created as (select tk, min(nam)
+     tk_and_year_created as (select tk, min(nam) as nam
                              from "core.so_du_dau_ky_moi_tai_khoan"
                              group by tk
                              order by tk)
