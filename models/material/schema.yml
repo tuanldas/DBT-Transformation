@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: transformation_phat_sinh_thang_1
+    columns:
+      - name: ky
+      - name: dau_ky
+      - name: thu_trong_ky
+      - name: chi_trong_ky
+      - name: phat_sinh_trong_ky
+      - name: cuoi_ky
