@@ -29,5 +29,5 @@ with months as
 --          join years on true
 -- order by year, month;
 
-select *
+select tk, nam
 from tk_and_year_created
