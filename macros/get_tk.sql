@@ -1,3 +1,3 @@
 {% macro geTks() %}
-{{ return(select tk from tk_and_year_created) }}
+{{ return(select tk from transformation_phat_sinh_thang_1) }}
 {% endmacro %}
