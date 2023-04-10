@@ -15,9 +15,19 @@ with months as
      tk_and_year_created as (select tk, min(nam)
                              from "core.so_du_dau_ky_moi_tai_khoan"
                              group by tk
-                             order by tk),
-     tk as (select tk
-            from tk_and_year_created)
-    {% for i in tk %}
-        select nam from tk_and_year_created where tk={{tk}} union all
-    {% endfor %}
+                             order by tk)
+--      years as (SELECT DISTINCT *
+--                FROM (VALUES (2017),
+--                             (2018),
+--                             (2019),
+--                             (2020),
+--                             (2021),
+--                             (2022),
+--                             (2023)) AS x(year))
+-- select distinct month, year
+-- from months
+--          join years on true
+-- order by year, month;
+
+select *
+from tk_and_year_created
