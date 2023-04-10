@@ -4,5 +4,3 @@
         select nam from transformation_phat_sinh_thang_1 where tk={{i}}
         {% if not loop.last -%} union all {%- endif %}
     {% endfor %}
-
-        select nam from transformation_phat_sinh_thang_1
