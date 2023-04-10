@@ -1,5 +1,5 @@
 {% set tks = geTks() %}
 
 {% for i in tks %}
-        select nam from tk_and_year_created where tk={{tk}}
+        select nam from transformation_phat_sinh_thang_1 where tk={{tk}}
     {% endfor %}
