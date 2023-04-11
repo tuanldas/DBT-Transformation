@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: transformation_phat_sinh_thang_1
+  - name: ghep_so_du_dau_ky_va_phat_sinh
     columns:
       - name: ky
       - name: dau_ky
