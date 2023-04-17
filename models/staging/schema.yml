@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: public
     database: test_datawarehouse
-    schema: test_schema
+    schema: test_schema_test_schema
     tables:
       - name: raw_orders
       - name: raw_customers
