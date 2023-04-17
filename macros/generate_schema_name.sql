@@ -3,7 +3,7 @@
     {%- set default_schema = target.schema -%}
     {%- if custom_schema_name is none -%}
 
-        {{ vars("override_schema") }}
+        {{ var("override_schema") }}
 
     {%- else -%}
 
