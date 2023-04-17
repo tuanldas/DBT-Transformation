@@ -5,6 +5,9 @@ version: '0.1'
 
 profile: 'jaffle_shop'
 
+vars:
+  project: "CGVN"
+
 model-paths: ["models"]
 seed-paths: ["seeds"]
 test-paths: ["tests"]
