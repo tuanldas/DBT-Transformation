@@ -1,5 +1,5 @@
 with source as (select *
-                from raw_orders),
+                from {{ source('jaffle_shop', '')}}),
 
      renamed as (select id      as order_id,
                         user_id as customer_id,
