@@ -1,4 +1,14 @@
 {% macro generate_schema_name(custom_schema_name, node) -%}
-        {{ var("project") }}
+
+    {%- set default_schema = target.schema -%}
+    {%- if custom_schema_name is none -%}
+
+        {{ vars("override_schema") }}
+
+    {%- else -%}
+
+        {{ default_schema }}_{{ custom_schema_name | trim }}
+
+    {%- endif -%}
 
 {%- endmacro %}

@@ -6,7 +6,7 @@ version: '0.1'
 profile: 'jaffle_shop'
 
 vars:
-  project: "CGVN"
+  override_schema: "public"
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
