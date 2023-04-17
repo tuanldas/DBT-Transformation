@@ -1,5 +1,5 @@
 with source as (select *
-                from raw_payments),
+                from {{ source('public', 'raw_payments')}}),
 
      renamed as (select id           as payment_id,
                         order_id,
