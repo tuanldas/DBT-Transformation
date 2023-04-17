@@ -22,6 +22,9 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 models:
   jaffle_shop:
       materialized: table
+      +schema: |
+        {% if  target.name == "dev" %} test_schema_test_schema
+        {% endif %}
       staging:
         materialized: table
       material:
