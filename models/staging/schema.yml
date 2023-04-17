@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: jaffle_shop
+  - name: public
     database: test_datawarehouse
-    schema: jaffle_shop
+    schema: public
     tables:
       - name: raw_orders
       - name: raw_customers
