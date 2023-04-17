@@ -27,5 +27,3 @@ models:
       materialized: table
       staging:
         materialized: table
-      material:
-        materialized: table
