@@ -23,7 +23,7 @@ models:
   jaffle_shop:
       materialized: table
       +schema: |
-        {% if  target.name == "dev" %} test_schema_test_schema
+        {% if var("project") == "CGVN" %} vn
         {% endif %}
       staging:
         materialized: table
